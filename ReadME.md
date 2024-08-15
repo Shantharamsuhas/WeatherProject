@@ -1,0 +1,1 @@
+Type in the city name to know the weather
