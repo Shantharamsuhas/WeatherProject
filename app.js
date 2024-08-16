@@ -33,7 +33,7 @@ app.post("/",function(req,res){
 
             const icon = weatherData.weather[0].icon
             const imagURL = "http://openweathermap.org/img/wn/"+icon+"@2x.png"
-            res.write("<p>Weather Description :"+weatherDesc+"</p>");
+            res.write("<p id ='weatherdescription'>Weather Description :"+weatherDesc+"</p>");
             res.write("<h1>The temp in "+query+  " is "+temp+" Celsius.</h1>");
             res.write("<img src="+imagURL+">");
             res.send()
@@ -44,9 +44,6 @@ app.post("/",function(req,res){
 
     })
 });
-
-
-
 
 
 
